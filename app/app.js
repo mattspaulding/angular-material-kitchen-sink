@@ -8,12 +8,12 @@ app.config(function ($stateProvider,$urlRouterProvider) {
     $stateProvider.state("home", {
         url: "/",
         controller: "HomeCtrl",
-        templateUrl: "/app/views/home.html"
+        templateUrl: "app/views/home.html"
     })
     $stateProvider.state("button", {
         url: "/button",
         controller: "ButtonCtrl",
-        templateUrl: "/app/views/button.html"
+        templateUrl: "app/views/button.html"
     })
 
   
