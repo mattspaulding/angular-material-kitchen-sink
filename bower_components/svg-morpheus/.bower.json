@@ -1,0 +1,32 @@
+{
+  "name": "svg-morpheus",
+  "version": "0.1.8",
+  "authors": [
+    "Alex Kaul <alexkaul@googlemail.com>"
+  ],
+  "description": "JavaScript library enabling SVG icons to morph from one to the other. It implements Material Design's Delightful Details transitions.",
+  "main": [
+    "compile/minified/svg-morpheus.js"
+  ],
+  "keywords": [
+    "svg",
+    "morph",
+    "js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {},
+  "homepage": "https://github.com/alexk111/SVG-Morpheus",
+  "_release": "0.1.8",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.8",
+    "commit": "ecafca2dc2082dad37f2bd23f971475d5ceda92e"
+  },
+  "_source": "git://github.com/alexk111/SVG-Morpheus.git",
+  "_target": "*",
+  "_originalSource": "svg-morpheus"
+}
