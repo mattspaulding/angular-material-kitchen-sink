@@ -11,7 +11,7 @@
     <!-- Local Styles-->
     <link href="site.css" rel="stylesheet" />
     <link href="app/styles/button.css" rel="stylesheet" />
-  <!-- CDN Styles -->
+    <!-- CDN Styles -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body ng-app="App" layout="row" ng-controller="IndexCtrl" ng-cloak>
@@ -50,25 +50,32 @@
             </md-button>
         </md-content>
     </md-sidenav>
-    <div flex layout="column" tabIndex="-1" role="main" class="md-whiteframe-z2">
-        <md-toolbar layout="row" class="md-whiteframe-z1">
-            <div class="md-toolbar-tools">
-                <md-button class="md-icon-button" hide-gt-md aria-label="Show Menu">
-                    <ng-md-icon icon="{{menuIcon}}" size="48" style="fill:white;" ng-click="menuToggle()"></ng-md-icon>
-                    <md-tooltip>
-                        MENU
-                    </md-tooltip>
-                </md-button>
-                <h1 flex laout-align="center center">
-                    <span>{{title}}</span>
-                </h1>
+    <div layout="column" layout-fill>
+        <header>
+            <md-toolbar layout="row" class="md-whiteframe-z1">
+                <div class="md-toolbar-tools">
+                    <md-button class="md-icon-button" hide-gt-md aria-label="Show Menu">
+                        <ng-md-icon icon="{{menuIcon}}" size="48" style="fill:white;" ng-click="menuToggle()"></ng-md-icon>
+                        <md-tooltip>
+                            MENU
+                        </md-tooltip>
+                    </md-button>
+                    <h1 flex layout-align="center center">
+                        <span>{{title}}</span>
+                    </h1>
+                    <a href="https://github.com/mattspaulding/angular-material-kitchen-sink"><ng-md-icon icon="github-circle" size="48" style="fill:white;vertical-align:middle;"></ng-md-icon></a>
+                </div>
+            </md-toolbar>
+        </header>
+        <main class="md-padding" layout="row" flex>
+            <md-content flex id="content">
+                <div class="fade-view" ui-view="">
+                </div>
+            </md-content>
+        </main>
 
-            </div>
-        </md-toolbar>
-        <md-content flex layout-padding id="content">
-            <div class="fade-view" flex ui-view="">
-            </div>
     </div>
+  
     <!-- 3rd party libraries -->
     <!-- Bower Components -->
     <script src="bower_components/angular/angular.js"></script>
