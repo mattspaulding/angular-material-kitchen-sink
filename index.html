@@ -11,7 +11,8 @@
     <!-- Local Styles-->
     <link href="site.css" rel="stylesheet" />
     <link href="app/styles/button.css" rel="stylesheet" />
-    <link href="app/styles/progressCircular.css" rel="stylesheet" />
+    <link href="app/styles/datePicker.css" rel="stylesheet" />
+  <link href="app/styles/progressCircular.css" rel="stylesheet" />
     <link href="app/styles/progressLinear.css" rel="stylesheet" />
   <!-- CDN Styles -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -42,15 +43,19 @@
             </md-button>
             <md-button aria-label="Button" style="width:100%;" ng-click="go('button');menuToggle();title = 'BUTTON';">
                 <div layout="row">
-                    <div flex="20">
-                        <i class="material-icons" style="color:white;">cake</i>
-                    </div>
                     <div flex layout="row" layout-align="start center">
                         <span style="font-size:18px;color:white;">Button</span>
                     </div>
                 </div>
             </md-button>
-            <md-button aria-label="Progress Circular" style="width:100%;" ng-click="go('progressCircular');menuToggle();title = 'PROGRESS CIRCULAR';">
+            <md-button aria-label="Date Picker" style="width:100%;" ng-click="go('datePicker');menuToggle();title = 'DATE PICKER';">
+                <div layout="row">
+                    <div flex layout="row" layout-align="start center">
+                        <span style="font-size:18px;color:white;">Date Picker</span>
+                    </div>
+                </div>
+            </md-button>
+       <md-button aria-label="Progress Circular" style="width:100%;" ng-click="go('progressCircular');menuToggle();title = 'PROGRESS CIRCULAR';">
                 <div layout="row">
                     <div flex layout="row" layout-align="start center">
                         <span style="font-size:18px;color:white;">Progress Circular</span>
@@ -110,7 +115,8 @@
     <script src="app/controllers/homeCtrl.js"></script>
     <script src="app/controllers/sideNavLeftCtrl.js"></script>
     <script src="app/controllers/buttonCtrl.js"></script>
-    <script src="app/controllers/progressCircularCtrl.js"></script>
+    <script src="app/controllers/datePickerCtrl.js"></script>
+   <script src="app/controllers/progressCircularCtrl.js"></script>
     <script src="app/controllers/progressLinearCtrl.js"></script>
  <!-- Load custom filters -->
     <!-- Load custom directives -->

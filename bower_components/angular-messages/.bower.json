@@ -1,17 +1,17 @@
 {
   "name": "angular-messages",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "main": "./angular-messages.js",
   "ignore": [],
   "dependencies": {
-    "angular": "1.4.7"
+    "angular": "1.4.8"
   },
   "homepage": "https://github.com/angular/bower-angular-messages",
-  "_release": "1.4.7",
+  "_release": "1.4.8",
   "_resolution": {
     "type": "version",
-    "tag": "v1.4.7",
-    "commit": "8753fbb98fc6fa7e9063ce9dee5e2eca97a517cb"
+    "tag": "v1.4.8",
+    "commit": "3ba35e93811fb910f5ebf6cd2f0134701e7889d2"
   },
   "_source": "git://github.com/angular/bower-angular-messages.git",
   "_target": "*",
