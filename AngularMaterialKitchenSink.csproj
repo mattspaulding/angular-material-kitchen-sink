@@ -60,15 +60,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\controllers\datePickerCtrl.js" />
     <Content Include="app\controllers\progressCircularCtrl.js" />
     <Content Include="app\controllers\progressLinearCtrl.js" />
     <Content Include="app\controllers\buttonCtrl.js" />
     <Content Include="app\controllers\sideNavLeftCtrl.js" />
     <Content Include="app\controllers\homeCtrl.js" />
     <Content Include="app\controllers\indexCtrl.js" />
+    <Content Include="app\styles\datePicker.css" />
     <Content Include="app\styles\progressCircular.css" />
     <Content Include="app\styles\progressLinear.css" />
     <Content Include="app\styles\button.css" />
+    <Content Include="app\views\datePicker.html" />
     <Content Include="app\views\progressCircular.html" />
     <Content Include="app\views\progressLinear.html" />
     <Content Include="app\views\button.html" />
