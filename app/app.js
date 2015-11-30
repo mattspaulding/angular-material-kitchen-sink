@@ -15,6 +15,16 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         controller: "ButtonCtrl",
         templateUrl: "app/views/button.html"
     })
+    $stateProvider.state("progressCircular", {
+        url: "/progressCircular",
+        controller: "ProgressCircularCtrl",
+        templateUrl: "app/views/progressCircular.html"
+    })
+    $stateProvider.state("progressLinear", {
+        url: "/progressLinear",
+        controller: "ProgressLinearCtrl",
+        templateUrl: "app/views/progressLinear.html"
+    })
 
   
 });
