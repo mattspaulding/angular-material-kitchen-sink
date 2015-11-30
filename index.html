@@ -11,7 +11,9 @@
     <!-- Local Styles-->
     <link href="site.css" rel="stylesheet" />
     <link href="app/styles/button.css" rel="stylesheet" />
-    <!-- CDN Styles -->
+    <link href="app/styles/progressCircular.css" rel="stylesheet" />
+    <link href="app/styles/progressLinear.css" rel="stylesheet" />
+  <!-- CDN Styles -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body ng-app="App" layout="row" ng-controller="IndexCtrl" ng-cloak>
@@ -48,7 +50,21 @@
                     </div>
                 </div>
             </md-button>
-        </md-content>
+            <md-button aria-label="Progress Circular" style="width:100%;" ng-click="go('progressCircular');menuToggle();title = 'PROGRESS CIRCULAR';">
+                <div layout="row">
+                    <div flex layout="row" layout-align="start center">
+                        <span style="font-size:18px;color:white;">Progress Circular</span>
+                    </div>
+                </div>
+            </md-button>
+            <md-button aria-label="Progress Linear" style="width:100%;" ng-click="go('progressLinear');menuToggle();title = 'PROGRESS LINEAR';">
+                <div layout="row">
+                    <div flex layout="row" layout-align="start center">
+                        <span style="font-size:18px;color:white;">Progress Linear</span>
+                    </div>
+                </div>
+            </md-button>
+    </md-content>
     </md-sidenav>
     <div layout="column" layout-fill>
         <header>
@@ -94,7 +110,9 @@
     <script src="app/controllers/homeCtrl.js"></script>
     <script src="app/controllers/sideNavLeftCtrl.js"></script>
     <script src="app/controllers/buttonCtrl.js"></script>
-    <!-- Load custom filters -->
+    <script src="app/controllers/ProgressCircularCtrl.js"></script>
+    <script src="app/controllers/ProgressLinearCtrl.js"></script>
+ <!-- Load custom filters -->
     <!-- Load custom directives -->
 </body>
 </html>
