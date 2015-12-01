@@ -21,17 +21,17 @@
 <body ng-app="App" layout="row" ng-controller="IndexCtrl" ng-cloak>
     <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2"
                 md-component-id="left"
-                style="background-color:lightblue;"
+                style="background-color:#4DD0E1;"
                 md-is-locked-open="$mdMedia('gt-md')">
         <md-toolbar layout="row" class="md-whiteframe-z1">
             <div class="md-toolbar-tools">
                 <md-button class="md-icon-button" hide-gt-md aria-label="Show Menu">
                     <ng-md-icon icon="{{menuIcon}}" size="48" style="fill:white;vertical-align:middle;" ng-click="menuToggle()" hide-gt-md></ng-md-icon>
                 </md-button>
-                <h2>MENU</h2>
+                <h2 style="color:white;">MENU</h2>
             </div>
         </md-toolbar>
-        <md-content layout-padding style="background-color:lightblue;" layout="column">
+        <md-content layout-padding style="background-color:#4DD0E1;" layout="column">
             <md-button aria-label="Home" style="width:100%;" ng-click="go('home');menuToggle();title = 'ANGULAR MATERIAL';">
                 <div layout="row">
                     <div flex="20">
@@ -42,6 +42,7 @@
                     </div>
                 </div>
             </md-button>
+            <md-divider></md-divider>
             <md-button aria-label="Bottom Sheet" style="width:100%;" ng-click="go('bottomSheet');menuToggle();title = 'BOTTOM SHEET';">
                 <div layout="row">
                     <div flex layout="row" layout-align="start center">
@@ -80,16 +81,13 @@
     </md-content>
     </md-sidenav>
     <div layout="column" layout-fill>
-        <header>
-            <md-toolbar layout="row" class="md-whiteframe-z1">
+        <header style="color:white;">
+            <md-toolbar layout="row" class="md-whiteframe-z1 md-primary md-hue-2">
                 <div class="md-toolbar-tools">
                     <md-button class="md-icon-button" hide-gt-md aria-label="Show Menu">
                         <ng-md-icon icon="{{menuIcon}}" size="48" style="fill:white;" ng-click="menuToggle()"></ng-md-icon>
-                        <md-tooltip>
-                            MENU
-                        </md-tooltip>
                     </md-button>
-                    <h1 flex layout-align="center center">
+                    <h1 flex layout-align="center center" style="color:white;">
                         <span>{{title}}</span>
                     </h1>
                     <a href="https://github.com/mattspaulding/angular-material-kitchen-sink"><ng-md-icon icon="github-circle" size="48" style="fill:white;vertical-align:middle;"></ng-md-icon></a>
