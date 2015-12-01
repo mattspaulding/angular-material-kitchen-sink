@@ -22,9 +22,8 @@ app.controller('BottomSheetCtrl', function ($scope, $timeout, $mdBottomSheet, $m
             targetEvent: $event
         }).then(function (clickedItem) {
             $mdToast.show(
-                  $mdToast.simple()
-                    .textContent(clickedItem['name'] + ' clicked!')
-                    .position('top right')
+                  $mdToast.simple(clickedItem['name'] + ' clicked!')
+                     .position('top right')
                     .hideDelay(1500)
                 );
         });
@@ -47,12 +46,10 @@ app.controller('BottomSheetCtrl', function ($scope, $timeout, $mdBottomSheet, $m
 })
 .controller('GridBottomSheetCtrl', function ($scope, $mdBottomSheet) {
     $scope.items = [
-      { name: 'Hangout', icon: 'local_pizza' },
+      { name: 'Pizza', icon: 'local_pizza' },
       { name: 'Mail', icon: 'mail' },
       { name: 'Message', icon: 'message' },
       { name: 'Copy', icon: 'content_copy' },
-      { name: 'Facebook', icon: 'local_pizza' },
-      { name: 'Twitter', icon: 'local_pizza' },
     ];
 
     $scope.listItemClick = function ($index) {
