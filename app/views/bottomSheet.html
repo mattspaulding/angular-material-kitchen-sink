@@ -1,0 +1,54 @@
+﻿<div ng-controller="BottomSheetCtrl" class="md-padding bottomSheetdemoBasicUsage" ng-cloak="">
+    <h2 class="md-title">Usage</h2>
+    <p>
+        Bottom sheets can be displayed by clicking one of the buttons below.  Once shown, it can be
+        dismissed by either swiping down or clicking in the shaded area.
+    </p>
+    <h2 class="md-title">Actions</h2>
+    <p>Use one of the following buttons to display a bottom sheet.</p>
+    <div class="bottom-sheet-demo inset" layout="row" layout-sm="column" layout-align="center">
+        <md-button flex="50" class="md-primary md-raised" ng-click="showListBottomSheet($event)">Show as List</md-button>
+        <md-button flex="50" class="md-primary md-raised" ng-click="showGridBottomSheet($event)">Show as Grid</md-button>
+    </div>
+
+    <div ng-if="alert">
+        <br>
+        <b layout="row" layout-align="center center" class="md-padding">
+            {{alert}}
+        </b>
+    </div>
+    <script type="text/ng-template" id="bottom-sheet-grid-template.html">
+        <md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+            <div layout="row" layout-align="center center">
+                <h4>With clickOutsideToClose option, drag down or press ESC to close</h4>
+            </div>
+            <md-list flex layout="row" layout-align="center center">
+                <md-list-item ng-repeat="item in items">
+
+                    <md-button class="md-grid-item-content" ng-click="listItemClick($index)">
+                        <i class="material-icons">{{item.icon}}</i>
+                            <div class="md-grid-text"> {{ item.name }} </div>
+</md-button>
+
+                </md-list-item>
+            </md-list>
+        </md-bottom-sheet>
+    </script>
+    <script type="text/ng-template" id="bottom-sheet-list-template.html">
+        <md-bottom-sheet class="md-list md-has-header" ng-cloak>
+            <md-subheader>Comment Actions</md-subheader>
+            <md-list>
+                <md-list-item ng-repeat="item in items">
+
+                    <md-button ng-click="listItemClick($index)"
+                               md-autofocus="$index == 2"
+                               class="md-list-item-content">
+                        <i class="material-icons">{{item.icon}}</i>
+                            <span class="md-inline-list-icon-label">{{ item.name }}</span>
+</md-button>
+
+                </md-list-item>
+            </md-list>
+        </md-bottom-sheet>
+    </script>
+</div>

@@ -1,0 +1,25 @@
+﻿.bottomSheetdemoBasicUsage .md-inline-list-icon-label {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: -10px;
+  height: 24px;
+  vertical-align: middle; }
+.bottomSheetdemoBasicUsage .md-grid-item-content {
+  height: 96px; }
+.bottomSheetdemoBasicUsage .md-grid-item-content md-icon {
+  height: 48px;
+  width: 48px; }
+.bottomSheetdemoBasicUsage .md-grid-text {
+  padding-bottom: 5px; }
+.bottomSheetdemoBasicUsage md-list-item, .bottomSheetdemoBasicUsage md-list-item .md-list-item-inner {
+  min-height: 48px; }
+.bottomSheetdemoBasicUsage h2 {
+  line-height: 36px;
+  padding-top: 10px; }
+.bottomSheetdemoBasicUsage .md-subheader .md-subheader-inner {
+  padding: 0px; }
+.bottomSheetdemoBasicUsage md-toast {
+  background-color: #B14141; }
+.bottomSheetdemoBasicUsage md-toast > * {
+  font-weight: bolder; }

@@ -10,6 +10,11 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         controller: "HomeCtrl",
         templateUrl: "app/views/home.html"
     })
+    $stateProvider.state("bottomSheet", {
+        url: "/bottomSheet",
+        controller: "BottomSheetCtrl",
+        templateUrl: "app/views/bottomSheet.html"
+    })
     $stateProvider.state("button", {
         url: "/button",
         controller: "ButtonCtrl",
