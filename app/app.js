@@ -55,6 +55,10 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         controller: "ToastCtrl",
         templateUrl: "app/views/toast.html"
     })
+    $stateProvider.state("whiteframe", {
+        url: "/whiteframe",
+        templateUrl: "app/views/whiteframe.html"
+    })
 
   
 });

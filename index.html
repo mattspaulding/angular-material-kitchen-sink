@@ -15,6 +15,7 @@
     <link href="app/styles/datePicker.css" rel="stylesheet" />
     <link href="app/styles/progressCircular.css" rel="stylesheet" />
     <link href="app/styles/progressLinear.css" rel="stylesheet" />
+    <link href="app/styles/whiteframe.css" rel="stylesheet" />
     <!-- CDN Styles -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -106,7 +107,14 @@
                     </div>
                 </div>
             </md-button>
-     </md-content>
+            <md-button aria-label="Whiteframe" style="width:100%;" ng-click="go('whiteframe');menuToggle();title = 'WHTEFRAME';">
+                <div layout="row">
+                    <div flex layout="row" layout-align="start center">
+                        <span style="font-size:18px;color:white;">Whiteframe</span>
+                    </div>
+                </div>
+            </md-button>
+   </md-content>
     </md-sidenav>
     <div layout="column" layout-fill>
         <header style="color:white;">

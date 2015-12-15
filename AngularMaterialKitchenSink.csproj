@@ -77,6 +77,7 @@
     <Content Include="app\styles\progressCircular.css" />
     <Content Include="app\styles\progressLinear.css" />
     <Content Include="app\styles\button.css" />
+    <Content Include="app\views\whiteframe.html" />
     <Content Include="app\views\gridList.html" />
     <Content Include="app\views\toast.html" />
     <Content Include="app\views\input.html" />
