@@ -12,10 +12,10 @@
     <link href="site.css" rel="stylesheet" />
     <link href="app/styles/bottomSheet.css" rel="stylesheet" />
     <link href="app/styles/button.css" rel="stylesheet" />
-   <link href="app/styles/datePicker.css" rel="stylesheet" />
-  <link href="app/styles/progressCircular.css" rel="stylesheet" />
+    <link href="app/styles/datePicker.css" rel="stylesheet" />
+    <link href="app/styles/progressCircular.css" rel="stylesheet" />
     <link href="app/styles/progressLinear.css" rel="stylesheet" />
-  <!-- CDN Styles -->
+    <!-- CDN Styles -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body ng-app="App" layout="row" ng-controller="IndexCtrl" ng-cloak>
@@ -57,21 +57,28 @@
                     </div>
                 </div>
             </md-button>
-       <md-button aria-label="Button" style="width:100%;" ng-click="go('button');menuToggle();title = 'BUTTON';">
+            <md-button aria-label="Button" style="width:100%;" ng-click="go('button');menuToggle();title = 'BUTTON';">
                 <div layout="row">
                     <div flex layout="row" layout-align="start center">
                         <span style="font-size:18px;color:white;">Button</span>
                     </div>
                 </div>
             </md-button>
-        <md-button aria-label="Date Picker" style="width:100%;" ng-click="go('datePicker');menuToggle();title = 'DATE PICKER';">
+            <md-button aria-label="Date Picker" style="width:100%;" ng-click="go('datePicker');menuToggle();title = 'DATE PICKER';">
                 <div layout="row">
                     <div flex layout="row" layout-align="start center">
                         <span style="font-size:18px;color:white;">Date Picker</span>
                     </div>
                 </div>
             </md-button>
-       <md-button aria-label="Progress Circular" style="width:100%;" ng-click="go('progressCircular');menuToggle();title = 'PROGRESS CIRCULAR';">
+            <md-button aria-label="Input" style="width:100%;" ng-click="go('input');menuToggle();title = 'INPUT';">
+                <div layout="row">
+                    <div flex layout="row" layout-align="start center">
+                        <span style="font-size:18px;color:white;">Input</span>
+                    </div>
+                </div>
+            </md-button>
+            <md-button aria-label="Progress Circular" style="width:100%;" ng-click="go('progressCircular');menuToggle();title = 'PROGRESS CIRCULAR';">
                 <div layout="row">
                     <div flex layout="row" layout-align="start center">
                         <span style="font-size:18px;color:white;">Progress Circular</span>
@@ -85,7 +92,7 @@
                     </div>
                 </div>
             </md-button>
-    </md-content>
+        </md-content>
     </md-sidenav>
     <div layout="column" layout-fill>
         <header style="color:white;">
@@ -109,7 +116,7 @@
         </main>
 
     </div>
-  
+
     <!-- 3rd party libraries -->
     <!-- Bower Components -->
     <script src="bower_components/angular/angular.js"></script>
@@ -129,11 +136,12 @@
     <script src="app/controllers/sideNavLeftCtrl.js"></script>
     <script src="app/controllers/autocompleteCtrl.js"></script>
     <script src="app/controllers/bottomSheetCtrl.js"></script>
-   <script src="app/controllers/buttonCtrl.js"></script>
-  <script src="app/controllers/datePickerCtrl.js"></script>
-   <script src="app/controllers/progressCircularCtrl.js"></script>
+    <script src="app/controllers/buttonCtrl.js"></script>
+    <script src="app/controllers/datePickerCtrl.js"></script>
+    <script src="app/controllers/inputCtrl.js"></script>
+    <script src="app/controllers/progressCircularCtrl.js"></script>
     <script src="app/controllers/progressLinearCtrl.js"></script>
- <!-- Load custom filters -->
+    <!-- Load custom filters -->
     <!-- Load custom directives -->
 </body>
 </html>

@@ -60,6 +60,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\controllers\inputCtrl.js" />
     <Content Include="app\controllers\bottomSheetCtrl.js" />
     <Content Include="app\controllers\datePickerCtrl.js" />
     <Content Include="app\controllers\progressCircularCtrl.js" />
@@ -74,6 +75,7 @@
     <Content Include="app\styles\progressCircular.css" />
     <Content Include="app\styles\progressLinear.css" />
     <Content Include="app\styles\button.css" />
+    <Content Include="app\views\input.html" />
     <Content Include="app\views\bottomSheet.html" />
     <Content Include="app\views\datePicker.html" />
     <Content Include="app\views\autocomplete.html" />

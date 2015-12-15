@@ -30,6 +30,11 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         controller: "DatePickerCtrl",
         templateUrl: "app/views/datePicker.html"
     })
+    $stateProvider.state("input", {
+        url: "/input",
+        controller: "InputCtrl",
+        templateUrl: "app/views/input.html"
+    })
     $stateProvider.state("progressCircular", {
         url: "/progressCircular",
         controller: "ProgressCircularCtrl",
