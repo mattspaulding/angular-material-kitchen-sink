@@ -1,5 +1,5 @@
 ﻿'use strict';
-app.controller('AutocompleteCtrl', ['$timeout','$q','$log',function($timeout, $q, $log) {
+app.controller('AutocompleteCtrl', function($timeout, $q, $log) {
     var self = this;
 
     self.simulateQuery = false;
@@ -76,4 +76,4 @@ app.controller('AutocompleteCtrl', ['$timeout','$q','$log',function($timeout, $q
         };
 
     }
-}]);
+});

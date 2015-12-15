@@ -1,5 +1,5 @@
 ﻿'use strict';
-app.controller('IndexCtrl', ['$scope', '$mdSidenav', '$state', function ($scope, $mdSidenav, $state) {
+app.controller('IndexCtrl', function ($scope, $mdSidenav, $state) {
     
     $scope.title = 'HOME';
 
@@ -26,4 +26,4 @@ app.controller('IndexCtrl', ['$scope', '$mdSidenav', '$state', function ($scope,
             $scope.menuIcon = 'menu';
         }
     }
-}]);
+});
