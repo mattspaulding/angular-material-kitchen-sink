@@ -30,6 +30,11 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         controller: "DatePickerCtrl",
         templateUrl: "app/views/datePicker.html"
     })
+    $stateProvider.state("gridList", {
+        url: "/gridList",
+        controller: "GridListCtrl",
+        templateUrl: "app/views/gridList.html"
+    })
     $stateProvider.state("input", {
         url: "/input",
         controller: "InputCtrl",
