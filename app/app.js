@@ -10,6 +10,11 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         controller: "HomeCtrl",
         templateUrl: "app/views/home.html"
     })
+    $stateProvider.state("autocomplete", {
+        url: "/autocomplete",
+        controller: "AutocompleteCtrl",
+        templateUrl: "app/views/autocomplete.html"
+    })
     $stateProvider.state("bottomSheet", {
         url: "/bottomSheet",
         controller: "BottomSheetCtrl",

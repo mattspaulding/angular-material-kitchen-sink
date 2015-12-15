@@ -28,11 +28,11 @@
                 <md-button class="md-icon-button" hide-gt-md aria-label="Show Menu">
                     <ng-md-icon icon="{{menuIcon}}" size="48" style="fill:white;vertical-align:middle;" ng-click="menuToggle()" hide-gt-md></ng-md-icon>
                 </md-button>
-                <h2 style="color:white;">MENU</h2>
+                <h2 style="color:white;">ANGULAR MATERIAL</h2>
             </div>
         </md-toolbar>
         <md-content layout-padding style="background-color:#4DD0E1;" layout="column">
-            <md-button aria-label="Home" style="width:100%;" ng-click="go('home');menuToggle();title = 'ANGULAR MATERIAL';">
+            <md-button aria-label="Home" style="width:100%;" ng-click="go('home');menuToggle();title = 'HOME';">
                 <div layout="row">
                     <div flex="20">
                         <i class="material-icons" style="color:white;">home</i>
@@ -43,6 +43,13 @@
                 </div>
             </md-button>
             <md-divider></md-divider>
+            <md-button aria-label="Autocomplete" style="width:100%;" ng-click="go('autocomplete');menuToggle();title = 'AUTOCOMPLETE';">
+                <div layout="row">
+                    <div flex layout="row" layout-align="start center">
+                        <span style="font-size:18px;color:white;">Autocomplete</span>
+                    </div>
+                </div>
+            </md-button>
             <md-button aria-label="Bottom Sheet" style="width:100%;" ng-click="go('bottomSheet');menuToggle();title = 'BOTTOM SHEET';">
                 <div layout="row">
                     <div flex layout="row" layout-align="start center">
@@ -50,7 +57,7 @@
                     </div>
                 </div>
             </md-button>
-            <md-button aria-label="Button" style="width:100%;" ng-click="go('button');menuToggle();title = 'BUTTON';">
+       <md-button aria-label="Button" style="width:100%;" ng-click="go('button');menuToggle();title = 'BUTTON';">
                 <div layout="row">
                     <div flex layout="row" layout-align="start center">
                         <span style="font-size:18px;color:white;">Button</span>
@@ -120,8 +127,9 @@
     <script src="app/controllers/indexCtrl.js"></script>
     <script src="app/controllers/homeCtrl.js"></script>
     <script src="app/controllers/sideNavLeftCtrl.js"></script>
+    <script src="app/controllers/autocompleteCtrl.js"></script>
     <script src="app/controllers/bottomSheetCtrl.js"></script>
-    <script src="app/controllers/buttonCtrl.js"></script>
+   <script src="app/controllers/buttonCtrl.js"></script>
   <script src="app/controllers/datePickerCtrl.js"></script>
    <script src="app/controllers/progressCircularCtrl.js"></script>
     <script src="app/controllers/progressLinearCtrl.js"></script>
