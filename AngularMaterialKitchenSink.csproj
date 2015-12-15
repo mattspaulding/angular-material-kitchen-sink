@@ -77,6 +77,7 @@
     <Content Include="app\styles\progressCircular.css" />
     <Content Include="app\styles\progressLinear.css" />
     <Content Include="app\styles\button.css" />
+    <Content Include="app\styles\whiteframe.css" />
     <Content Include="app\views\whiteframe.html" />
     <Content Include="app\views\gridList.html" />
     <Content Include="app\views\toast.html" />
@@ -564,38 +565,10 @@
     <Content Include="bower_components\angular-messages\angular-messages.js" />
     <Content Include="bower_components\angular-messages\angular-messages.min.js" />
     <Content Include="bower_components\angular-messages\index.js" />
-    <Content Include="bower_components\angular-ui-router\release\angular-ui-router.js" />
-    <Content Include="bower_components\angular-ui-router\release\angular-ui-router.min.js" />
-    <Content Include="bower_components\angular-ui-router\src\common.js" />
-    <Content Include="bower_components\angular-ui-router\src\resolve.js" />
-    <Content Include="bower_components\angular-ui-router\src\state.js" />
-    <Content Include="bower_components\angular-ui-router\src\stateDirectives.js" />
-    <Content Include="bower_components\angular-ui-router\src\stateFilters.js" />
-    <Content Include="bower_components\angular-ui-router\src\templateFactory.js" />
-    <Content Include="bower_components\angular-ui-router\src\urlMatcherFactory.js" />
-    <Content Include="bower_components\angular-ui-router\src\urlRouter.js" />
-    <Content Include="bower_components\angular-ui-router\src\view.js" />
-    <Content Include="bower_components\angular-ui-router\src\viewDirective.js" />
-    <Content Include="bower_components\angular-ui-router\src\viewScroll.js" />
     <Content Include="bower_components\angular\angular-csp.css" />
     <Content Include="bower_components\angular\angular.js" />
     <Content Include="bower_components\angular\angular.min.js" />
     <Content Include="bower_components\angular\index.js" />
-    <Content Include="bower_components\svg-morpheus\.gitattributes" />
-    <Content Include="bower_components\svg-morpheus\.gitignore" />
-    <Content Include="bower_components\svg-morpheus\compile\minified\svg-morpheus.js" />
-    <Content Include="bower_components\svg-morpheus\compile\unminified\svg-morpheus.js" />
-    <Content Include="bower_components\svg-morpheus\demos\demo.css" />
-    <Content Include="bower_components\svg-morpheus\demos\demo.js" />
-    <Content Include="bower_components\svg-morpheus\demos\iconset.svg" />
-    <Content Include="bower_components\svg-morpheus\demos\iframe.html" />
-    <Content Include="bower_components\svg-morpheus\demos\inline.html" />
-    <Content Include="bower_components\svg-morpheus\demos\object.html" />
-    <Content Include="bower_components\svg-morpheus\gulpfile.js" />
-    <Content Include="bower_components\svg-morpheus\source\js\deps\easings.js" />
-    <Content Include="bower_components\svg-morpheus\source\js\deps\helpers.js" />
-    <Content Include="bower_components\svg-morpheus\source\js\deps\snapsvglite.js" />
-    <Content Include="bower_components\svg-morpheus\source\js\svg-morpheus.js" />
     <Content Include="site.css" />
     <Content Include="web.config" />
     <Content Include="bower_components\angular-animate\.bower.json" />
@@ -673,23 +646,12 @@
     <Content Include="bower_components\angular-messages\bower.json" />
     <Content Include="bower_components\angular-messages\package.json" />
     <Content Include="bower_components\angular-messages\README.md" />
-    <Content Include="bower_components\angular-ui-router\.bower.json" />
-    <Content Include="bower_components\angular-ui-router\bower.json" />
-    <Content Include="bower_components\angular-ui-router\CHANGELOG.md" />
-    <Content Include="bower_components\angular-ui-router\CONTRIBUTING.md" />
-    <Content Include="bower_components\angular-ui-router\LICENSE" />
-    <Content Include="bower_components\angular-ui-router\README.md" />
     <Content Include="bower_components\angular\.bower.json" />
     <Content Include="bower_components\angular\angular.min.js.gzip" />
     <Content Include="bower_components\angular\angular.min.js.map" />
     <Content Include="bower_components\angular\bower.json" />
     <Content Include="bower_components\angular\package.json" />
     <Content Include="bower_components\angular\README.md" />
-    <Content Include="bower_components\svg-morpheus\.bower.json" />
-    <Content Include="bower_components\svg-morpheus\bower.json" />
-    <Content Include="bower_components\svg-morpheus\LICENSE" />
-    <Content Include="bower_components\svg-morpheus\package.json" />
-    <Content Include="bower_components\svg-morpheus\README.md" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -706,7 +668,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <TypeScriptCompile Include="bower_components\angular-ui-router\api\angular-ui-router.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
   </ItemGroup>
   <ItemGroup>
