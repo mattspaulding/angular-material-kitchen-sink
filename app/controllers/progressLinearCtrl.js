@@ -1,5 +1,5 @@
 ﻿'use strict';
-app.controller('ProgressLinearCtrl', ['$scope', '$interval', function($scope, $interval) {
+app.controller('ProgressLinearCtrl', function($scope, $interval) {
     var self = this, j= 0, counter = 0;
 
     self.mode = 'query';
@@ -44,4 +44,4 @@ app.controller('ProgressLinearCtrl', ['$scope', '$interval', function($scope, $i
     $interval(function() {
         self.mode = (self.mode == 'query' ? 'determinate' : 'query');
     }, 7200, 0, true);
-}]);
+});

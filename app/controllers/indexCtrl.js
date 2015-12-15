@@ -1,7 +1,7 @@
 ﻿'use strict';
-app.controller('IndexCtrl', ['$scope', '$mdSidenav', '$state', function ($scope, $mdSidenav, $state) {
+app.controller('IndexCtrl', function ($scope, $mdSidenav, $state) {
     
-    $scope.title = 'ANGULAR MATERIAL';
+    $scope.title = 'HOME';
 
     $scope.go = function (path) {
         $state.go(path);
@@ -26,4 +26,4 @@ app.controller('IndexCtrl', ['$scope', '$mdSidenav', '$state', function ($scope,
             $scope.menuIcon = 'menu';
         }
     }
-}]);
+});

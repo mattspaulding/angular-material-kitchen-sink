@@ -10,6 +10,11 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         controller: "HomeCtrl",
         templateUrl: "app/views/home.html"
     })
+    $stateProvider.state("autocomplete", {
+        url: "/autocomplete",
+        controller: "AutocompleteCtrl",
+        templateUrl: "app/views/autocomplete.html"
+    })
     $stateProvider.state("bottomSheet", {
         url: "/bottomSheet",
         controller: "BottomSheetCtrl",
@@ -25,6 +30,16 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         controller: "DatePickerCtrl",
         templateUrl: "app/views/datePicker.html"
     })
+    $stateProvider.state("gridList", {
+        url: "/gridList",
+        controller: "GridListCtrl",
+        templateUrl: "app/views/gridList.html"
+    })
+    $stateProvider.state("input", {
+        url: "/input",
+        controller: "InputCtrl",
+        templateUrl: "app/views/input.html"
+    })
     $stateProvider.state("progressCircular", {
         url: "/progressCircular",
         controller: "ProgressCircularCtrl",
@@ -34,6 +49,15 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         url: "/progressLinear",
         controller: "ProgressLinearCtrl",
         templateUrl: "app/views/progressLinear.html"
+    })
+    $stateProvider.state("toast", {
+        url: "/toast",
+        controller: "ToastCtrl",
+        templateUrl: "app/views/toast.html"
+    })
+    $stateProvider.state("whiteframe", {
+        url: "/whiteframe",
+        templateUrl: "app/views/whiteframe.html"
     })
 
   
