@@ -45,6 +45,11 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         controller: "ProgressLinearCtrl",
         templateUrl: "app/views/progressLinear.html"
     })
+    $stateProvider.state("toast", {
+        url: "/toast",
+        controller: "ToastCtrl",
+        templateUrl: "app/views/toast.html"
+    })
 
   
 });
