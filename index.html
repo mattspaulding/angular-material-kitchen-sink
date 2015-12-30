@@ -12,7 +12,8 @@
     <link href="site.css" rel="stylesheet" />
     <link href="app/styles/bottomSheet.css" rel="stylesheet" />
     <link href="app/styles/button.css" rel="stylesheet" />
-    <link href="app/styles/datePicker.css" rel="stylesheet" />
+    <link href="app/styles/card.css" rel="stylesheet" />
+  <link href="app/styles/datePicker.css" rel="stylesheet" />
     <link href="app/styles/progressCircular.css" rel="stylesheet" />
     <link href="app/styles/progressLinear.css" rel="stylesheet" />
     <link href="app/styles/whiteframe.css" rel="stylesheet" />
@@ -65,7 +66,14 @@
                     </div>
                 </div>
             </md-button>
-            <md-button aria-label="Date Picker" style="width:100%;" ng-click="go('datePicker');menuToggle();title = 'DATE PICKER';">
+            <md-button aria-label="Card" style="width:100%;" ng-click="go('card');menuToggle();title = 'CARD';">
+                <div layout="row">
+                    <div flex layout="row" layout-align="start center">
+                        <span style="font-size:18px;color:white;">Card</span>
+                    </div>
+                </div>
+            </md-button>
+         <md-button aria-label="Date Picker" style="width:100%;" ng-click="go('datePicker');menuToggle();title = 'DATE PICKER';">
                 <div layout="row">
                     <div flex layout="row" layout-align="start center">
                         <span style="font-size:18px;color:white;">Date Picker</span>
@@ -159,7 +167,8 @@
     <script src="app/controllers/autocompleteCtrl.js"></script>
     <script src="app/controllers/bottomSheetCtrl.js"></script>
     <script src="app/controllers/buttonCtrl.js"></script>
-    <script src="app/controllers/datePickerCtrl.js"></script>
+    <script src="app/controllers/cardCtrl.js"></script>
+   <script src="app/controllers/datePickerCtrl.js"></script>
     <script src="app/controllers/gridListCtrl.js"></script>
     <script src="app/controllers/inputCtrl.js"></script>
   <script src="app/controllers/progressCircularCtrl.js"></script>
