@@ -24,11 +24,11 @@
     <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2"
                 md-component-id="left"
                 style="background-color:#4DD0E1;"
-                md-is-locked-open="$mdMedia('gt-md')">
+                md-is-locked-open="$mdMedia('gt-sm')">
         <md-toolbar layout="row" class="md-whiteframe-z1">
             <div class="md-toolbar-tools">
                 <md-button class="md-icon-button" hide-gt-md aria-label="Show Menu">
-                    <ng-md-icon icon="{{menuIcon}}" size="48" style="fill:white;vertical-align:middle;" ng-click="menuToggle()" hide-gt-md></ng-md-icon>
+                    <ng-md-icon icon="{{menuIcon}}" style="fill:white;vertical-align:middle;" ng-click="menuToggle()" hide-gt-sm></ng-md-icon>
                 </md-button>
                 <h2 style="color:white;">ANGULAR MATERIAL</h2>
             </div>
@@ -50,7 +50,7 @@
             <md-toolbar layout="row" class="md-whiteframe-z1 md-primary md-hue-2">
                 <div class="md-toolbar-tools">
                     <md-button class="md-icon-button" hide-gt-md aria-label="Show Menu">
-                        <ng-md-icon icon="{{menuIcon}}" size="48" style="fill:white;" ng-click="menuToggle()"></ng-md-icon>
+                        <ng-md-icon icon="{{menuIcon}}" style="fill:white;" ng-click="menuToggle()"></ng-md-icon>
                     </md-button>
                     <h1 flex layout-align="center center" style="color:white;">
                         <span>{{title | uppercase}}</span>
