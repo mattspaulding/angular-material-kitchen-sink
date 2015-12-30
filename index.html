@@ -13,7 +13,7 @@
     <link href="app/styles/bottomSheet.css" rel="stylesheet" />
     <link href="app/styles/button.css" rel="stylesheet" />
     <link href="app/styles/card.css" rel="stylesheet" />
-  <link href="app/styles/datePicker.css" rel="stylesheet" />
+    <link href="app/styles/datePicker.css" rel="stylesheet" />
     <link href="app/styles/progressCircular.css" rel="stylesheet" />
     <link href="app/styles/progressLinear.css" rel="stylesheet" />
     <link href="app/styles/whiteframe.css" rel="stylesheet" />
@@ -24,115 +24,36 @@
     <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2"
                 md-component-id="left"
                 style="background-color:#4DD0E1;"
-                md-is-locked-open="$mdMedia('gt-md')">
+                md-is-locked-open="$mdMedia('gt-sm')">
         <md-toolbar layout="row" class="md-whiteframe-z1">
             <div class="md-toolbar-tools">
                 <md-button class="md-icon-button" hide-gt-md aria-label="Show Menu">
-                    <ng-md-icon icon="{{menuIcon}}" size="48" style="fill:white;vertical-align:middle;" ng-click="menuToggle()" hide-gt-md></ng-md-icon>
+                    <ng-md-icon icon="{{menuIcon}}" style="fill:white;vertical-align:middle;" ng-click="menuToggle()" hide-gt-sm></ng-md-icon>
                 </md-button>
                 <h2 style="color:white;">ANGULAR MATERIAL</h2>
             </div>
         </md-toolbar>
-        <md-content layout-padding style="background-color:#4DD0E1;" layout="column">
-            <md-button aria-label="Home" style="width:100%;" ng-click="go('home');menuToggle();title = 'HOME';">
-                <div layout="row">
-                    <div flex="20">
-                        <i class="material-icons" style="color:white;">home</i>
-                    </div>
-                    <div flex layout="row" layout-align="start center">
-                        <span style="font-size:18px;color:white;">Home</span>
-                    </div>
-                </div>
-            </md-button>
+
+        <md-list>
+            <md-list-item ng-click="go('home','home');menuToggle();">
+                <i class="material-icons" style="color:white;">home</i> <p style="font-size:18px;color:white;">HOME</p>
+            </md-list-item>
             <md-divider></md-divider>
-            <md-button aria-label="Autocomplete" style="width:100%;" ng-click="go('autocomplete');menuToggle();title = 'AUTOCOMPLETE';">
-                <div layout="row">
-                    <div flex layout="row" layout-align="start center">
-                        <span style="font-size:18px;color:white;">Autocomplete</span>
-                    </div>
-                </div>
-            </md-button>
-            <md-button aria-label="Bottom Sheet" style="width:100%;" ng-click="go('bottomSheet');menuToggle();title = 'BOTTOM SHEET';">
-                <div layout="row">
-                    <div flex layout="row" layout-align="start center">
-                        <span style="font-size:18px;color:white;">Bottom Sheet</span>
-                    </div>
-                </div>
-            </md-button>
-            <md-button aria-label="Button" style="width:100%;" ng-click="go('button');menuToggle();title = 'BUTTON';">
-                <div layout="row">
-                    <div flex layout="row" layout-align="start center">
-                        <span style="font-size:18px;color:white;">Button</span>
-                    </div>
-                </div>
-            </md-button>
-            <md-button aria-label="Card" style="width:100%;" ng-click="go('card');menuToggle();title = 'CARD';">
-                <div layout="row">
-                    <div flex layout="row" layout-align="start center">
-                        <span style="font-size:18px;color:white;">Card</span>
-                    </div>
-                </div>
-            </md-button>
-         <md-button aria-label="Date Picker" style="width:100%;" ng-click="go('datePicker');menuToggle();title = 'DATE PICKER';">
-                <div layout="row">
-                    <div flex layout="row" layout-align="start center">
-                        <span style="font-size:18px;color:white;">Date Picker</span>
-                    </div>
-                </div>
-            </md-button>
-            <md-button aria-label="Grid List" style="width:100%;" ng-click="go('gridList');menuToggle();title = 'GRID LIST';">
-                <div layout="row">
-                    <div flex layout="row" layout-align="start center">
-                        <span style="font-size:18px;color:white;">Grid List</span>
-                    </div>
-                </div>
-            </md-button>
-            <md-button aria-label="Input" style="width:100%;" ng-click="go('input');menuToggle();title = 'INPUT';">
-                <div layout="row">
-                    <div flex layout="row" layout-align="start center">
-                        <span style="font-size:18px;color:white;">Input</span>
-                    </div>
-                </div>
-            </md-button>
-      <md-button aria-label="Progress Circular" style="width:100%;" ng-click="go('progressCircular');menuToggle();title = 'PROGRESS CIRCULAR';">
-                <div layout="row">
-                    <div flex layout="row" layout-align="start center">
-                        <span style="font-size:18px;color:white;">Progress Circular</span>
-                    </div>
-                </div>
-            </md-button>
-            <md-button aria-label="Progress Linear" style="width:100%;" ng-click="go('progressLinear');menuToggle();title = 'PROGRESS LINEAR';">
-                <div layout="row">
-                    <div flex layout="row" layout-align="start center">
-                        <span style="font-size:18px;color:white;">Progress Linear</span>
-                    </div>
-                </div>
-            </md-button>
-            <md-button aria-label="Toast" style="width:100%;" ng-click="go('toast');menuToggle();title = 'TOAST';">
-                <div layout="row">
-                    <div flex layout="row" layout-align="start center">
-                        <span style="font-size:18px;color:white;">Toast</span>
-                    </div>
-                </div>
-            </md-button>
-            <md-button aria-label="Whiteframe" style="width:100%;" ng-click="go('whiteframe');menuToggle();title = 'WHTEFRAME';">
-                <div layout="row">
-                    <div flex layout="row" layout-align="start center">
-                        <span style="font-size:18px;color:white;">Whiteframe</span>
-                    </div>
-                </div>
-            </md-button>
-   </md-content>
+            <md-list-item ng-repeat="item in menuItems" ng-click="go(item.path,item.name);menuToggle();">
+                <p style="font-size:18px;color:white;">{{item.name | uppercase}}</p>
+            </md-list-item>
+        </md-list>
+
     </md-sidenav>
     <div layout="column" layout-fill>
         <header style="color:white;">
             <md-toolbar layout="row" class="md-whiteframe-z1 md-primary md-hue-2">
                 <div class="md-toolbar-tools">
                     <md-button class="md-icon-button" hide-gt-md aria-label="Show Menu">
-                        <ng-md-icon icon="{{menuIcon}}" size="48" style="fill:white;" ng-click="menuToggle()"></ng-md-icon>
+                        <ng-md-icon icon="{{menuIcon}}" style="fill:white;" ng-click="menuToggle()"></ng-md-icon>
                     </md-button>
                     <h1 flex layout-align="center center" style="color:white;">
-                        <span>{{title}}</span>
+                        <span>{{title | uppercase}}</span>
                     </h1>
                     <a href="https://github.com/mattspaulding/angular-material-kitchen-sink"><ng-md-icon icon="github-circle" size="48" style="fill:white;vertical-align:middle;"></ng-md-icon></a>
                 </div>
@@ -168,13 +89,13 @@
     <script src="app/controllers/bottomSheetCtrl.js"></script>
     <script src="app/controllers/buttonCtrl.js"></script>
     <script src="app/controllers/cardCtrl.js"></script>
-   <script src="app/controllers/datePickerCtrl.js"></script>
+    <script src="app/controllers/datePickerCtrl.js"></script>
     <script src="app/controllers/gridListCtrl.js"></script>
     <script src="app/controllers/inputCtrl.js"></script>
-  <script src="app/controllers/progressCircularCtrl.js"></script>
+    <script src="app/controllers/progressCircularCtrl.js"></script>
     <script src="app/controllers/progressLinearCtrl.js"></script>
     <script src="app/controllers/toastCtrl.js"></script>
-  <!-- Load custom filters -->
+    <!-- Load custom filters -->
     <!-- Load custom directives -->
 </body>
 </html>
