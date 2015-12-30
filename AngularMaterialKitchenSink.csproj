@@ -60,6 +60,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\controllers\cardCtrl.js" />
     <Content Include="app\controllers\gridListCtrl.js" />
     <Content Include="app\controllers\toastCtrl.js" />
     <Content Include="app\controllers\inputCtrl.js" />
@@ -73,11 +74,13 @@
     <Content Include="app\controllers\homeCtrl.js" />
     <Content Include="app\controllers\indexCtrl.js" />
     <Content Include="app\styles\bottomSheet.css" />
+    <Content Include="app\styles\card.css" />
     <Content Include="app\styles\datePicker.css" />
     <Content Include="app\styles\progressCircular.css" />
     <Content Include="app\styles\progressLinear.css" />
     <Content Include="app\styles\button.css" />
     <Content Include="app\styles\whiteframe.css" />
+    <Content Include="app\views\card.html" />
     <Content Include="app\views\whiteframe.html" />
     <Content Include="app\views\gridList.html" />
     <Content Include="app\views\toast.html" />

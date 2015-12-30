@@ -25,6 +25,11 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         controller: "ButtonCtrl",
         templateUrl: "app/views/button.html"
     })
+    $stateProvider.state("card", {
+        url: "/card",
+        controller: "CardCtrl",
+        templateUrl: "app/views/card.html"
+    })
     $stateProvider.state("datePicker", {
         url: "/datePicker",
         controller: "DatePickerCtrl",
