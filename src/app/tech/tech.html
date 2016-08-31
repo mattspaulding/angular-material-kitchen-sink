@@ -1,0 +1,27 @@
+<div layout="vertical" layout-fill>
+
+  <md-content>
+
+    <section class="jumbotron"    style="background-color:#4DD0E1;">
+      <h1>Angular Material</h1>
+      <h2>Kitchen Sink</h2>
+      <p>
+        includes these fine tools
+      </p>
+    </section>
+
+    <div class="techs" layout-align="center">
+      <md-card ng-repeat="awesomeThing in tech.awesomeThings | orderBy:'rank'">
+        <md-card-content>
+          <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
+          <h3 class="md-title">{{ awesomeThing.title }}</h3>
+          <p>{{ awesomeThing.description }}</p>
+        </md-card-content>
+        <div class="md-action-buttons">
+          <md-button ng-href="{{ awesomeThing.url }}">Website</md-button>
+        </div>
+      </md-card>
+    </div>
+  </md-content>
+
+</div>
