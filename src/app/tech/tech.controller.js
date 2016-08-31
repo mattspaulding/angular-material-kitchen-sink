@@ -3,10 +3,10 @@
 
   angular
     .module('angularMaterialKitchenSink')
-    .controller('MainController', MainController);
+    .controller('TechController', TechController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
+  function TechController($timeout, webDevTec, toastr) {
     var vm = this;
 
     vm.awesomeThings = [];

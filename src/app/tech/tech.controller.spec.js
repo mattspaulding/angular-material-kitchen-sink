@@ -11,7 +11,7 @@
       spyOn(_webDevTec_, 'getTec').and.returnValue([{}, {}, {}, {}, {}]);
       spyOn(_toastr_, 'info').and.callThrough();
 
-      vm = _$controller_('MainController');
+      vm = _$controller_('TechController');
       $timeout = _$timeout_;
       toastr = _toastr_;
     }));

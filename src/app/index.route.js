@@ -14,11 +14,11 @@
         controller: 'HomeController',
         controllerAs: 'home'
       })
-      .state('main', {
-        url: '/main',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+      .state('tech', {
+        url: '/tech',
+        templateUrl: 'app/tech/tech.html',
+        controller: 'TechController',
+        controllerAs: 'tech'
       })
       .state('autocomplete', {
         url: '/autocomplete',

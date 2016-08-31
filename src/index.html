@@ -24,7 +24,7 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
   your browser</a> to improve your experience.</p>
 <![endif]-->
-<div layout="row" ng-controller="IndexController">
+<div layout="row" ng-controller="IndexController" style="overflow: hidden;">
   <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2"
               md-component-id="left"
               style="background-color:#4DD0E1;"
@@ -43,6 +43,10 @@
       <md-list-item ng-click="go('home','home');menuToggle();">
         <i class="material-icons" style="color:white;">home</i>
         <p style="font-size:18px;color:white;">HOME</p>
+      </md-list-item>
+      <md-list-item ng-click="go('tech','tech');menuToggle();">
+        <i class="material-icons" style="color:white;">&#xE87C;</i>
+        <p style="font-size:18px;color:white;">TECH</p>
       </md-list-item>
       <md-divider></md-divider>
       <md-list-item ng-repeat="item in menuItems" ng-click="go(item.path,item.name);menuToggle();">

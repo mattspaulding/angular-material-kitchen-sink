@@ -35,15 +35,15 @@
 
     $scope.menuIcon = 'menu';
     $scope.menuToggle = function () {
-      if ($scope.menuIcon == 'menu') {
-        $mdSidenav('left')
-          .open();
-        $scope.menuIcon = 'arrow_back';
-      }
-      else {
+      if ($mdSidenav('left').isOpen()) {
         $mdSidenav('left')
           .close();
         $scope.menuIcon = 'menu';
+      }
+      else {
+        $mdSidenav('left')
+          .open();
+        $scope.menuIcon = 'arrow_back';
       }
     }
   }
