@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   angular
@@ -20,12 +20,18 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
+      .state('autocomplete', {
+        url: '/autocomplete',
+        templateUrl: 'app/autocomplete/autocomplete.html',
+        controller: 'AutocompleteController',
+        controllerAs: 'autocomplete'
+      })
       .state('button', {
-      url: '/button',
-      templateUrl: 'app/button/button.html',
-      controller: 'ButtonController',
-      controllerAs: 'button'
-    });
+        url: '/button',
+        templateUrl: 'app/button/button.html',
+        controller: 'ButtonController',
+        controllerAs: 'button'
+      });
 
     $urlRouterProvider.otherwise('/');
   }
