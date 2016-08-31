@@ -78,18 +78,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="86" selection-start-line="26" selection-start-column="86" selection-end-line="26" selection-end-column="86" />
+            <state relative-caret-position="-510">
+              <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-sidenav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#md-list-item#0;n#md-list#0;n#md-sidenav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#md-list-item#0;n#md-list#0;n#md-sidenav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#1965#1973#1" expanded="true" />
+                <element signature="e#2041#2049#1" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#md-list-item#1;n#md-list#0;n#md-sidenav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ng-md-icon#0;n#a#0;n#div#0;n#md-toolbar#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1472614344000" expanded="true" signature="733:884" ph="..." />
-                <marker date="1472614344000" expanded="true" signature="826:852" ph="..." />
+                <marker date="1472614792000" expanded="true" signature="809:960" ph="..." />
+                <marker date="1472614792000" expanded="true" signature="902:928" ph="..." />
               </folding>
             </state>
           </provider>
@@ -513,12 +513,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1472599978252</updated>
-      <workItem from="1472599980371" duration="11921000" />
+      <workItem from="1472599980371" duration="12166000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11921000" />
+    <option name="totallyTimeSpent" value="12166000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -904,18 +904,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="86" selection-start-line="26" selection-start-column="86" selection-end-line="26" selection-end-column="86" />
+        <state relative-caret-position="-510">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-sidenav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#md-list-item#0;n#md-list#0;n#md-sidenav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#md-list-item#0;n#md-list#0;n#md-sidenav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1965#1973#1" expanded="true" />
+            <element signature="e#2041#2049#1" expanded="true" />
             <element signature="n#style#0;n#p#0;n#md-list-item#1;n#md-list#0;n#md-sidenav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ng-md-icon#0;n#a#0;n#div#0;n#md-toolbar#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1472614344000" expanded="true" signature="733:884" ph="..." />
-            <marker date="1472614344000" expanded="true" signature="826:852" ph="..." />
+            <marker date="1472614792000" expanded="true" signature="809:960" ph="..." />
+            <marker date="1472614792000" expanded="true" signature="902:928" ph="..." />
           </folding>
         </state>
       </provider>
