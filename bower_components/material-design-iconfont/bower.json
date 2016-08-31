@@ -1,0 +1,20 @@
+{
+  "name": "material-design-iconfont",
+  "version": "0.0.2",
+  "homepage": "https://github.com/zckrs/material-design-iconfont",
+  "authors": [
+    "Mehdy Dara <mdara@eleven-labs.com>"
+  ],
+  "license": "MIT",
+  "main": [
+    "./dist/angular-toastr.tpls.js",
+    "./dist/angular-toastr.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
