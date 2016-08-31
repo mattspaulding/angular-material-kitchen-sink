@@ -1,29 +1,29 @@
-const gulp = require('gulp');
-const HubRegistry = require('gulp-hub');
-const browserSync = require('browser-sync');
+/**
+ *  Welcome to your gulpfile!
+ *  The gulp tasks are split into several files in the gulp directory
+ *  because putting it all here was too long
+ */
 
-const conf = require('./conf/gulp.conf');
+'use strict';
 
-// Load some files into the registry
-const hub = new HubRegistry([conf.path.tasks('*.js')]);
+var fs = require('fs');
+var gulp = require('gulp');
 
-// Tell gulp to use the tasks just loaded
-gulp.registry(hub);
+/**
+ *  This will load all js or coffee files in the gulp directory
+ *  in order to load all gulp tasks
+ */
+fs.readdirSync('./gulp').filter(function(file) {
+  return (/\.(js|coffee)$/i).test(file);
+}).map(function(file) {
+  require('./gulp/' + file);
+});
 
-gulp.task('build', gulp.series(gulp.parallel('other', 'webpack:dist')));
-gulp.task('test', gulp.series('karma:single-run'));
-gulp.task('test:auto', gulp.series('karma:auto-run'));
-gulp.task('serve', gulp.series('webpack:watch', 'watch', 'browsersync'));
-gulp.task('serve:dist', gulp.series('default', 'browsersync:dist'));
-gulp.task('default', gulp.series('clean', 'build'));
-gulp.task('watch', watch);
 
-function reloadBrowserSync(cb) {
-  browserSync.reload();
-  cb();
-}
-
-function watch(done) {
-  gulp.watch(conf.path.src('app/**/*.html'), reloadBrowserSync);
-  done();
-}
+/**
+ *  Default task clean temporaries directories and launch the
+ *  main optimization build task
+ */
+gulp.task('default', ['clean'], function () {
+  gulp.start('build');
+});
