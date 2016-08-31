@@ -5,3 +5,5 @@ coverage/
 .idea/
 .tmp/
 dist/
+**/.idea/workspace.xml
+**/.idea/tasks.xml
