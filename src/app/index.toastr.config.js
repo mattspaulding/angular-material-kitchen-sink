@@ -3,10 +3,10 @@
 
   angular
     .module('angularMaterialKitchenSink')
-    .config(config);
+    .config(toastrConfig);
 
   /** @ngInject */
-  function config($logProvider, toastrConfig) {
+  function toastrConfig($logProvider, toastrConfig) {
     // Enable log
     $logProvider.debugEnabled(true);
 
