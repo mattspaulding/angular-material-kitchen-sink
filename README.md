@@ -1,16 +1,15 @@
 ﻿# angular-material-kitchen-sink
 Everything that Angular Material has to offer under one roof; everything but the kitchen sink.
-<h1>Check out the <a href="http://mattspaulding.github.io/angular-material-kitchen-sink">DEMO</a></h1>
-
 >    Getting Started
-```shell
+
 - Fork this project
 - Install latest node from nodejs.org
 - $ npm install
-- $ bower intall
+- $ bower install
 - $ gulp serve
 
-```
+
+<h1>Check out the <a href="http://mattspaulding.github.io/angular-material-kitchen-sink">DEMO</a></h1>
 
 <div class="jumbotron">
     <img src="https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Y1huOXVQdlFPMmM/materialdesign_introduction.png" width="100%" />
