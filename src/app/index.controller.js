@@ -11,6 +11,7 @@
       {name: 'autocomplete', path: 'autocomplete'},
      // {name: 'bottom sheet', path: 'bottomSheet'},
       {name: 'button', path: 'button'},
+      {name: 'theme picker', path: 'themePicker'},
       // {name: 'card', path: 'card'},
       // {name: 'date picker', path: 'datePicker'},
       // {name: 'grid list', path: 'gridList'},
