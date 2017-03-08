@@ -1,0 +1,60 @@
+<div layout="column" ng-cloak="" class="md-padding colorsdemoThemePicker" ng-app="MyApp">
+  <p>
+    Select a color from the <a class="md-accent" href="{{mdURL}}">Theme Color Palettes</a>
+    below:
+  </p>
+  <!-- Theme Options -->
+  <div layout="row" layout-wrap="" layout-align="center center">
+    <md-button ng-repeat="color in colors" flex-gt-md="15" flex="30" md-colors="{background: '{{color}}'}" md-colors-watch="false" ng-disabled="primary === color && !isPrimary" ng-click="selectTheme(color)">
+      {{color}}
+    </md-button>
+  </div>
+  <!-- Footnote -->
+  <p style="padding-top: 20px;">
+    Shown below are the colors of the custom <code>theme-preview</code> component that
+    were updated by <code>md-colors</code>
+  </p>
+  <!-- Theme Preview -->
+  <div layout="row" class="section" layout-align="center center">
+    <div layout="column" flex="50">
+      <span class="componentTag">theme-preview</span>
+      <theme-preview primary="primary" accent="accent"></theme-preview>
+    </div>
+  </div>
+  <!-- Footnote -->
+  <p class="footnote">
+    Notice that the foreground colors are automatically determined (from the theme configurations)
+    based on the specified background palette selection. Of course, you could easily override the
+    foreground color also...
+  </p>
+
+  <script type="text/ng-template" id="themePreview.tmpl.html"><div layout="column">
+  <div md-colors="{background: '{{primary}}-500'}"  md-justified="column" class="primary line">
+    <span>Primary - {{primary}}</span>
+    <div md-justified >
+      <span>500</span>
+      <span>{{getColor(primary + '-500')}}</span>
+    </div>
+  </div>
+  <div md-colors="{background: '{{primary}}-700'}" md-justified class="line" >
+    <span>700</span>
+    <span>{{getColor(primary + '-700')}}</span>
+  </div>
+  <div md-colors="{background: '{{primary}}-800'}" md-justified class="line" >
+    <span>800</span>
+    <span>{{getColor(primary + '-800')}}</span>
+  </div>
+  <div md-colors="{background: '{{accent}}-A200'}" md-justified="column" class="accent line">
+    <span>Accent - {{accent}}</span>
+    <div md-justified>
+      <span>A200</span>
+      <span>{{getColor(accent + '-A200')}}</span>
+    </div>
+  </div>
+  </div>
+  </script></div>
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that can be foundin the LICENSE file at http://material.angularjs.org/HEAD/license.
+-->

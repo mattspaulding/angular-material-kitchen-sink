@@ -31,6 +31,12 @@
         templateUrl: 'app/button/button.html',
         controller: 'ButtonController',
         controllerAs: 'button'
+      })
+      .state('themePicker', {
+        url: '/themePicker',
+        templateUrl: 'app/themePicker/themePicker.html',
+        controller: 'ThemePickerController',
+        controllerAs: 'themePicker'
       });
 
     $urlRouterProvider.otherwise('/');

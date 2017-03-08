@@ -3,10 +3,7 @@
 
   angular
     .module('angularMaterialKitchenSink')
-    .controller('AutocompleteController', AutocompleteController);
-
-  /** @ngInject */
-  function AutocompleteController($timeout, $q) {
+    .controller('AutocompleteController', function($timeout, $q) {
     var vm = this;
     // list of `state` value/display objects
     vm.states        = loadAll();
@@ -53,5 +50,5 @@
         return (state.value.indexOf(lowercaseQuery) === 0);
       };
     }
-  }
+  });
 })();

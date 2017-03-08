@@ -3,15 +3,12 @@
 
   angular
     .module('angularMaterialKitchenSink')
-    .controller('ButtonController', ButtonController);
+    .controller('ButtonController', function() {
+      var vm = this;
 
-  /** @ngInject */
-  function ButtonController() {
-    var vm = this;
-
-    vm.title1 = 'Button';
-    vm.title4 = 'Warn';
-    vm.isDisabled = true;
-    vm.googleUrl = 'http://google.com';
-  }
+      vm.title1 = 'Button';
+      vm.title4 = 'Warn';
+      vm.isDisabled = true;
+      vm.googleUrl = 'http://google.com';
+    });
 })();
