@@ -74,7 +74,7 @@ gulp.task('fonts', function () {
   return gulp.src($.mainBowerFiles().concat('bower_components/material-design-iconfont/iconfont/*'))
     .pipe($.filter('**/*.{eot,otf,svg,ttf,woff,woff2}'))
     .pipe($.flatten())
-    .pipe(gulp.dest(path.join(conf.paths.dist, '/fonts/')));
+    .pipe(gulp.dest(path.join(conf.paths.dist, '/styles/fonts/')));
 });
 
 gulp.task('other', function () {
