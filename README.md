@@ -1,12 +1,12 @@
 ﻿# angular-material-kitchen-sink
 Everything that Angular Material has to offer under one roof; everything but the kitchen sink.
->    Getting Started
 
-- Fork this project
-- Install latest node from nodejs.org
-- $ npm install
-- $ bower install
-- $ gulp serve
+>    Getting Started
+>- Fork this project
+>- Install latest node from nodejs.org
+>- $ npm install
+>- $ bower install
+>- $ gulp serve
 
 
 <h1>Check out the <a href="http://mattspaulding.github.io/angular-material-kitchen-sink">DEMO</a></h1>
